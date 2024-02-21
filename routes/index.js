@@ -1,12 +1,27 @@
-// 메인페이지
-
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-const path = require('path');
 
-
-router.get('/', (req, res)=>{
-    res.sendFile(path.join(__dirname, '..', 'react_project', 'build', 'index.html'));
+// 메인 페이지
+router.get("/", (req, res)=>{
+    console.log("main page", req.session.nickname);
+    res.render('main',{nickname: req.session.nickname});
 })
 
-module.exports = router ; 
+router.get("/signup", (req, res)=>{
+    res.render('signup');
+})
+
+router.get("/signin", (req, res)=>{
+    res.render('signin');
+})
+
+router.get('/search' ,(req,res)=>{
+    res.render('search');
+})
+router.get('/delete',(req,res)=>{
+    res.render('delete')
+})
+router.get('/mini',(req,res)=>{
+    res.render('mini')
+})
+module.exports = router;
