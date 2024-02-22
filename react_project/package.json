@@ -8,8 +8,12 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.6.7",
     "body-parser": "^1.20.2",
+<<<<<<< HEAD
     "bootstrap": "^5.3.3",
     "cors": "^2.8.5",
+=======
+    "mysql2": "^3.9.1",
+>>>>>>> 2a84d1068552e7a400d85243ea70a6f8d5bba99e
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.1",
     "react-dom": "^18.2.0",

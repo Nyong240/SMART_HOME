@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        body{
+            padding:5%;
+            background-image: url('https://blog.kakaocdn.net/dn/b5QdOX/btrhykHQyXF/8hraEkB3fYRCce6b4LGA2k/img.gif'); 
+            
+            
+        }
+        @font-face {
+            font-family: 'KCCChassam';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCChassam.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+            
+}
+*{
+    font-family: 'KCCChassam';
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+    </style>
+</head>
+<body>
+    <a href="/">
+    <h1>회원 관리 시스템</h1>
+    </a>
+    <a href="signup">
+    <button type="button" class="btn btn-danger">회원가입</button>
+    </a>
+    <a href="/signin">
+    <button type="button" class="btn btn-danger">로그인</button>
+    </a>
+    <a href="user/signout">
+    <button type="button" class="btn btn-danger">로그아웃</button>
+    <a href="/user/showList">
+    <button type="button" class="btn btn-danger">전체회원검색</button>
+    </a>
+    <a href="/search">
+    <button type="button" class="btn btn-danger">특정회원검색</button>
+    </a>
+    <a href="/delete">
+    <button type="button" class="btn btn-danger">회원탈퇴</button>
+    </a>
+    <a href = "/mini">
+        <button type="button" class="btn btn-primary">미니홈피</button>
+    </a>
+    <hr>
+    <img src="rachun.gif" alt="">
+    <img src="rachun2.gif" alt="">
+    <!-- <img src="fire.jpg" alt=""> -->
+    <hr>
+    {% block content %}
+    {% endblock %}
+    <hr>
+    <span>
+        문의전화 : 010-0000-0000
+        <br>
+        이메일 : test@test.com
+    </span>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
